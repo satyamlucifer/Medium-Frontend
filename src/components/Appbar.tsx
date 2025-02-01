@@ -10,7 +10,7 @@ export function Appbar({ name }: AppbarData) {
         <div className="flex justify-center flex-col">
             <Link to="/blogs">
                 <div className="flex flex-col justify-center text-xl font-semibold cursor-pointer">
-                    Medium
+                    MidMinds
                 </div>
             </Link>
         </div>
@@ -24,11 +24,11 @@ export function Appbar({ name }: AppbarData) {
                 <Avatar name={name} size={"big"}></Avatar>
             </div>
             <div className="cursor-pointer">
-            <Link to={"/signin"}>
-            <Logout onClick={()=>{
-                localStorage.clear()
-            }}></Logout>
-            </Link>
+                <Link to={"/signin"}>
+                    <Logout onClick={() => {
+                        localStorage.clear()
+                    }}></Logout>
+                </Link>
             </div>
 
         </div>
